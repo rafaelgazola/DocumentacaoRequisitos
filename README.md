@@ -1,114 +1,75 @@
-# Sistema de Gestão de Tarefas - Especificação de Requistos
+# Curso de Levantamento de Requisitos 60h (80 Aulas)
 
-## 1. Introdução
+## Módulo 1 - Introdução a Levantamento de Requisitos e Metodologias Ágeis
 
-### 1.1 Propósito
+## Módulo 2 - Levantamento de Requisitos (Continuação)
 
-Este documento especifíca os requisitos funcionais e não-funcionais para os Sistema de Gestão de Tarefas (SGT). Seguindo o Padrão IEEE 29148.
+- O que é Levantamento de Requisitos
+    - Transformar as necessidades do negócio em informações técnicas
 
-### 1.2 Escopo
+- Requisitos Funcionais e Não Funcionais
+    - RF - O que o sistema vai fazer
+    - RNF - Como o sistema vai fazer
 
-O SGT permitirá que usuários criem, organizem e acompanhem tarefas pessoais e profissionais com sistema de prioridades e prazos.
+- Requistos, Regras, Restrições
+    - Requistos: A Parte Técnica do sistema
+    - Regras: As Necessidade dos Clientes
+    - Restrições: Limitações impostas pela, linguagem, leis, normas, 
 
-### 1.3 Definição e Acrônimos
+- Modelo de Documentação de Requisitos
 
-- **SGT**: Sistema de Gestão de Tarefas
-- **RF**: Requisitos Funcionais
-- **RNF**: Requisitos Não-Funcionais
-- **Sprint**: Período de 2 Semanas de Desenvolvimento
+|Campo|Conteúdo|Exemplo|
+|----|------|------|
+| ID | Código | RF-001 |
+| Título | Valor | Tela de Login |
+| Descrição | O Ator deve ser Capaz de | O Cliente conseguira fazer Login | 
+| Prioridade | Valor da PRioridade | Alta |
+| Regras Vinculadas | Outras Regras Relacionada | RN-001 - Banco de Dados |
 
-## 2. Descrição Geral
+======================================================================
+##  Tecnica de Levantamento de Requisitos 18/02
 
-### 2.1 Perspectiva do Produto
+- Briefing: Coleta de Dados Iniciais
+    - Nomedo Projeto
+    - Objetivo do Projeto (Levantamento de Requisitos)
+    - Púnlico-Alvo
+    - Orçamemntos
+    - Prazos
+    - Elementos de Design (cores, fonte, estilos, logomarca, logotipo, slogan)
+        - Manual de Identidade Visual 
+    - Identidade do Cliente
+        - Missão, Visão, Valores 
 
-O SGT será uma aplicação web responsiva com sincronização em nuvem
+- BraniStorm ou BrainStroming: TEcnica de Sugestão de Ideia para Solução de problemas
+    - Estrutura: Reuniões Pautadas, com ordem de fala e tempo prédeterminado
+    - Não Estruturadas: apenas os problemas são apresentados
+    - Mistas: Misturam tecnicas de reuniões estruturadas com não estruturadas, podem ter tempo de fala, mas sem ordem de fala,
+        - Ferramentas para BrainStorm:
+            - Miro, Mentimeter, OneNote, Goole Docs
+        
+- Questionário:
+    - Pergunas direcionadas com objetivo de montar o escopo do projeto
+    - nessa etapa o projeto passa a ganhar corpo e documentação 
+    - exemplos de perguntas:
+        - Onde Será acessado?
+        - quem ira acessar?
+        O que acontece quando clica aqui?
+    - Ferramentas para o questionaio:
+        - git e hithub (versionamento)
+        - 
+- Entrevista:
+    - ato de conversar com o usuaio do sistema
+    - identificaçõa das dpres e conhecimentos do usuario
+    - fonte de informaçãp para melhoria do sistema 
+    - nessa etapa ja existe um MVP (Minimo Produto Viavel);
 
-### 2.2 Funções Principais
+- Etnografia
+    - tecnica de levantamento de requisitos que consiste em **observar** a cultura doambiente que será desenvolvendo o projeto, ses valores, no seu dia-a-dia.
+    - muitas vezes uma equipe de desenvolvimento atua dentro da empresa contratante.
 
-- Criação e edição de tarefas
-- Organização por projetos e tags
-- Sistema de notificação
-- Relatório de produtividade
-
-## 3. Requistos Específicos
-
-### 3.1 Requisitos Funcionais
-
-#### RF-001: Criação de Tarefas
-
-**Descrição**: O Sistema deve permitirque o usuário criem tarefas com título, descrição, data de vencimento e prioridade.
-**Prioridade**: Alta
-**Versão**: 1.0
-**Data** 2026-03-25
-**Rastreabilidade**: Derivado de Necessidades do StakeHolder NS-001
-**Critérios de Aceitação**:
-
-- [ ] Usuário pode criar, editar e excluir tarefa
-- [ ] Formulário com campos obrigatórios (título) e opcionais
-- [ ] Níveis de prioridade: Baixa, Média, Alta, Urgente
-- [ ] Confirmação Visual após Criação
-- [ ] Validação de dados da tarefas (não permitir datas vazias)
-
----
-
-#### RF-002: Organização por Projetos
-
-**Descrição**: O sistema deve permitir agrupar tarefas em projetos personalizados
-**Prioridade**: Média
-**Versão**: 1.0
-**Data** 2026-03-25
-**Rastreabilidade**: Derivado de NS-002
-**Critérios de Aceitação**:
-
-- [ ] Usuário pode criar, renomear e excluir projetos
-- [ ] Tarefas podem ser atribuidas a um ou mais projetos
-- [ ] Visualização filtrada por projetos
-
----
-
-### 3.2 Requsitos Não-Funcionais
-
-#### RNF-001: Desempenho
-
-**Descrição**: O sistema deve carregar a lista de tarefas em menos de 1 segundopara até 100 tarefas.
-**Categoria**: Desempenho
-**Prioridade**: Alta
-**Versão**: 1.0
-**Métrica**: Tempo de resposta < 1s para 95% das requisições
-
----
-
-#### RNF-002: Segurança
-
-**Descrição**: O sistema deve implementar autenticação  Oauth 2.0 e criptografia TLS 1.3
-**Categoria**: Segurança
-**Prioridade**: Crítica
-**Versão**: 1.0
-**Métrica**: Conformidade LGPD, GDPR
-
----
-
-## 4. Controle de Versões
-
-### Histórico de Alterações
-
-|Versão|Data      |Autor  |Modificação   |
-|------|----------|-------|--------------|
-| 1.0  |2026-03-25|Gazola |Versão Inicial|
-
-### Rastreabilidade
-
-Gráfico de Rastreabilidade
-
-```mermaid
-
-graph TD
-
-    NS001['NS-001: Necessidade Stakeholder'] --> RF001['RF-001: Criação Tarefas']
-    RF001 --> TC001['TC-001: Teste Criação']
-
-    NS002['NS-002: Organização'] --> RF002['RF-002: Projetos']
-    RF002 --> TC002['TC-002: Teste Projetos']
-
-```
-
+- Workshop
+    - levar o produto e serviço proximo aos stakeHolders (pessoas Interessadas)
+    - Observar as informações e feedBacks deses Stakeholder a fim de melhorar para os proximos lançamentos
+    - lançamentos de produtos em feiras, eventos e workshops e produtos 
+    - atigem um punblico especifico (pessoas mais conectadas com os produtos)
+    
