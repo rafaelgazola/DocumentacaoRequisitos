@@ -94,7 +94,7 @@ O SGT será uma aplicação web responsiva com sincronização em nuvem
 
 |Versão|Data      |Autor  |Modificação   |
 |------|----------|-------|--------------|
-| 1.0  |2026-03-25|Diogotb|Versão Inicial|
+| 1.0  |2026-03-25|Gazola |Versão Inicial|
 
 ### Rastreabilidade
 
