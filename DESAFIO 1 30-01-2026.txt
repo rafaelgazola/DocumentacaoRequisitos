@@ -1,4 +1,0 @@
-- Oque é um projeto
-- Metdologias tradicionais 
-- Metodologias Agis 
-- Ferramentas ágeis scrum, lean, Kanban, XP
