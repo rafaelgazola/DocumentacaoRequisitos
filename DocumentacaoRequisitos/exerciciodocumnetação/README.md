@@ -48,6 +48,3 @@ Gerenciamento de prazos e disponibilidades de quartos.
 Início do levantamento de requisitos concluído.
 
 finalização da atualização da Documentação (março 2026)
-
-
-
