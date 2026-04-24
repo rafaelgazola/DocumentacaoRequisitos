@@ -99,6 +99,7 @@ O SGT será uma aplicação web responsiva com sincronização em nuvem
 **Prioridade**: Crítica
 **Versão**: 1.0
 **Métrica**: Conformidade LGPD, GDPR
+********************
 
 ---
 
